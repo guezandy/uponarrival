@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Arriving to: {{$search}}</title>
 
         <!-- 'theme-color' will set background color in Chrome browser on Android 5.0+ -->
         <meta name="theme-color" content="#263238">
@@ -40,11 +40,6 @@
       <!-- /PRELOADER -->
 
         <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-                <div class="quote">{{ Inspiring::quote() }}</div>
-
-            </div>
                 <!-- Expertise SECTION -->
                 <!--<span class="breakPoint" id="s4"></span>-->
                 <!--<div class="bg-dark section-xlg">-->
@@ -71,8 +66,8 @@
                                                         <h4 class="type">{{$names[$i]}}</h4>
                                                         <h4 padding-top: "25px" padding-right: "50px" padding-bottom: "25px" padding-left: "50px">Something something </h4>
                                                         <a href="#">
-                                                            <h5 class="text-primary details">The current value is {{ $i }}</h5>
-                                                            <h5 class="text-primary details">{{$pics[$i][0]}}</h5>
+                                                            <h5 class="text-primary details">Details</h5>
+                                                            <h5 class="text-primary details">Details</h5>
                                                         </a>
                                                     </div>
                                                 </div>

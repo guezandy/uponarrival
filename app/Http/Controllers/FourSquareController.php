@@ -65,13 +65,15 @@ class FourSquareController extends Controller {
 		for($i = 0; $i < $venue_count; $i++) {
 			$names[$i] = $venues[$i]->{'name'};
 			$images = array();
+			$images[0] = "asset('assets/img/placeholder.png')";
+			$images[1] = "asset('assets/img/placeholder.png')";
 			$api_images = $gateway->photos($venues[$i]->id);
 			//$single_api_image = $api_images[0];
 			//return  $single_api_image->prefix . $single_api_image->width ."x". $single_api_image->width. $single_api_image->suffix;
 			$pics_counter = 0;
 			foreach($api_images as $single_api_image) {
 				$format_url = $single_api_image->prefix . $single_api_image->width ."x". $single_api_image->width. $single_api_image->suffix;
-				$images[] =  $format_url;//str_replace("/", "", $format_url);
+				$images[$pics_counter] =  $format_url;//str_replace("/", "", $format_url);
 				$pics_counter++;
 				if($pics_counter >= $PICS_PER_VENUE) {
 					$pics_counter = 0;
