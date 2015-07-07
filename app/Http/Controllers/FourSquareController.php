@@ -50,7 +50,7 @@ class FourSquareController extends Controller {
     ));
 
     if(count($venues) == 0) {
-    	return "No results found for that city";
+    	return view('error')->with('search', $search);
     } else {
 
 		$PICS_PER_VENUE = 2;

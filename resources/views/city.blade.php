@@ -82,8 +82,11 @@
                                     </div>
                                 </div>
                             </div>
+                            @if(($i+1)%4 == 0)
+                          </div><!--end row -->
+                          <div class="row">
+                          @endif
                         @endfor
-
                         </div>
                     </div>
                 </div>
