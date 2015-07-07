@@ -12,7 +12,7 @@
 /*
  * ===================================
  * Helper Classes
- * 
+ *
  * includes: spaces, hr, section, filling-section, small container
  * ===================================
  * */
@@ -803,7 +803,7 @@ h1 > .label {
 /*
  * ===================================
  * Icons
- * 
+ *
  * includes: Circle icons, Square icons, Colors of Icons
  * ===================================
  * */
@@ -905,7 +905,7 @@ button .fa-angle-double-right:before {
 /*
  * ===================================
  * Icons Cover
- * 
+ *
  * includes: blue icon, circle border icon
  * ===================================
  * */
@@ -932,7 +932,7 @@ button .fa-angle-double-right:before {
 /*
  * ===================================
  * Buttons
- * 
+ *
  * includes: transparent buttons, extra large button, total transparent btn
  * ===================================
  * */
@@ -1123,7 +1123,7 @@ button .fa-angle-double-right:before {
 /*
  * ===================================
  * Forms
- * 
+ *
  * includes: Form with Icon, Transparent Form, Sign Up/In Pages
  * ===================================
  * */
@@ -1252,7 +1252,7 @@ button .fa-angle-double-right:before {
 /*
  * ===================================
  * Content Boxes
- * 
+ *
  * includes: content box
  * ===================================
  * */
@@ -1309,10 +1309,109 @@ OWL slider on portfolio piece
   height: auto;
 }
 
+#owl-portfolio0 .item{
+  margin: 3px;
+}
+#owl-portfolio0 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-portfolio1 .item{
+  margin: 3px;
+}
+#owl-portfolio1 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-portfolio2 .item{
+  margin: 3px;
+}
+#owl-portfolio2 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio3 .item{
+  margin: 3px;
+}
+#owl-portfolio3 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio4 .item{
+  margin: 3px;
+}
+#owl-portfolio4 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio5 .item{
+  margin: 3px;
+}
+#owl-portfolio5 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio6 .item{
+  margin: 3px;
+}
+#owl-portfolio6 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio7 .item{
+  margin: 3px;
+}
+#owl-portfolio7 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio8 .item{
+  margin: 3px;
+}
+#owl-portfolio8 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio9 .item{
+  margin: 3px;
+}
+#owl-portfolio9 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio10 .item{
+  margin: 3px;
+}
+#owl-portfolio10 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-portfolio11 .item{
+  margin: 3px;
+}
+#owl-portfolio11 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*
  * ===================================
  * Hover Content Boxes
- * 
+ *
  * includes: Slide from top and from bottom
  * ===================================
  * */
@@ -1549,7 +1648,7 @@ OWL slider on portfolio piece
 /*
  * ===================================
  * Navs
- * 
+ *
  * includes: Large tabs with icon, Full Width tabs, Inline Tabs, Filter Tabs, Filter Menu
  * ===================================
  * */
@@ -1784,7 +1883,7 @@ OWL slider on portfolio piece
 /*
  * ===================================
  * Navbars
- * 
+ *
  * includes: Navbar Default (only dropdown-menu - rest of default navbar is in bootstrap.css ), transparent navbar, navbar inverse
  * ===================================
  * */
@@ -2302,8 +2401,8 @@ OWL slider on portfolio piece
 }
 /*
  * ===================================
- *  Pricing Tables 
- * 
+ *  Pricing Tables
+ *
  * includes: 3 types of pricing tables
  * ===================================
  * */
@@ -2672,7 +2771,7 @@ OWL slider on portfolio piece
 /*
  * ===================================
  * Collapse
- * 
+ *
  * includes: accordion (using on the Support page)
  * ===================================
  * */
@@ -2874,7 +2973,7 @@ OWL slider on portfolio piece
 }
 /*
  * ===================================
- * Style Switcher 
+ * Style Switcher
  * ===================================
  * */
 .switcher-icon {

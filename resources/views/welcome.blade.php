@@ -113,6 +113,7 @@
                     <!--<input type="text" name="state" id="state">-->
                     <button type="submit" class="btn btn-success btn-sm">Update</button>
                 </form>
+                <img src="assets/img/poweredby.png">
             </div>
         </div>
     </body>
