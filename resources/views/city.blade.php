@@ -44,6 +44,7 @@
                 <!--<span class="breakPoint" id="s4"></span>-->
                 <!--<div class="bg-dark section-xlg">-->
                     <div class="container">
+                      <div class="space-sm"></div>
                         <h2 class="lg-title">{{$search}}</h2>
 
                         <!-- Tab panes -->
