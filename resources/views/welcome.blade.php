@@ -31,102 +31,16 @@
                 background-position: center;
                 background-size:cover;
             }
-
-            select {
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -webkit-padding-end: 20px;
-              -moz-padding-end: 20px;
-              -webkit-padding-start: 2px;
-              -moz-padding-start: 2px;
-              font-family: 'Lato';
-              background-color: rgba(0, 0, 0, 0.0);
-              background-position: center right;
-              background-repeat: no-repeat;
-              border: 0px solid #AAA;
-              border-radius: 2px;
-              box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
-              color: #555;
-              font-size: 24px;
-              margin: 0;
-              overflow: hidden;
-              padding-top: 2px;
-              padding-bottom: 2px;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-          }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-                background-color: rgba(255, 255, 255, 0.5);
-            }
-
-            .title {
-                font-size: 96px;
-                margin-bottom: 40px;
-                color: #000;
-            }
-
-            .quote {
-                font-size: 24px;
-            }
-            .input{
-              text-align: center;
-              font-size:24px;
-              width: 200px;
-              font-family: 'Lato';
-              background-color: rgba(0, 0, 0, 0.0);
-              border:0;
-              border-bottom: 2px solid;
-              border-color: rgb(0, 0, 0);
-
-            }
-
-            .btn {
-              display: inline-block;
-              margin-bottom: 0;
-              font-weight: 400;
-              text-align: center;
-              vertical-align: middle;
-              cursor: pointer;
-              background-image: none;
-              background-color: rgba(0, 0, 0, 0.0);
-              border: 1px solid transparent;
-              white-space: nowrap;
-              padding: 10px 15px;
-              font-size: 14px;
-              line-height: 1.42857143;
-              border-radius: 2px;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-              -webkit-transition: all 0.35s ease;
-                      transition: all 0.35s ease;
-            }
-
-            .btn-sm,
-              .btn-group-sm > .btn {
-                padding: 5px 10px;
-                font-size: 30px;
-                line-height: 1.5;
-                border-radius: 2px;
-              }
-        </style>
+            </style>
     </head>
     <body>
+        <div class="page-wrap">
         <div class="container">
             <div class="section-lg">
-                <div class="title">Upon arrival to:</div>
+              <div class="container">
+                <h2 class="lg-title">Upon arrival to:</h2>
+                <!--<div class="title">Upon arrival to:</div>-->
                 <form class="" method="any" action="{{ url('/search')}}">
-                  <!--MAKE SURE VALID HAS BEEN ENETERED BEFORE CONTINUING-->
                     <!--<input type="hidden" name="_token" value="{{ csrf_token() }}">-->
                     <input class="input" type="text" name="city" id="city" placeholder="City" required>
                     <select name="state" id="state" placeholder="State">
@@ -187,6 +101,8 @@
                 </form>
                 <img src="assets/img/poweredby.png" style="max-width:200px">
             </div>
+          </div>
         </div>
+      </div>
     </body>
 </html>
