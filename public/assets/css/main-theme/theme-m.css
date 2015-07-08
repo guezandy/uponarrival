@@ -94,8 +94,8 @@
 .container.section-md,
 .container.section-lg,
 .container.section-xlg {
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
 }
 /*=== seciton with no top padding ===*/
 .section-sm,
@@ -172,8 +172,8 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
 }
 /*
  * ===================================
@@ -1301,7 +1301,7 @@ button .fa-angle-double-right:before {
 OWL slider on portfolio piece
 **/
 #owl-portfolio .item{
-  margin: 3px;
+  margin: 0px;
 }
 #owl-portfolio .item img{
   display: block;
@@ -2440,7 +2440,7 @@ OWL slider on portfolio piece
 }
 .prices-v1 .panel-body,
 .prices .panel-body {
-  padding: 25px;
+  /*padding: 25px;*/
 }
 .ribbon {
   background: #fff;
@@ -3023,7 +3023,7 @@ OWL slider on portfolio piece
 }
 .style-switcher .body {
   background: #fff;
-  padding: 20px 15px 15px;
+  /*padding: 20px 15px 15px;*/
   position: relative;
   z-index: 202;
   -webkit-transition: all 500ms ease-in-out;
@@ -3032,7 +3032,7 @@ OWL slider on portfolio piece
   visibility: hidden;
 }
 .style-switcher .body h4 {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   font-size: 20px;
   color: #9e9e9e;
   margin-top: 0;
@@ -3141,7 +3141,7 @@ body.wrap-width {
   .wrap-width .navbar,
   .wrap-width .container,
   .wrap-width #page-wrap {
-    width: 1170px !important;
+    width: 100% !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1299px) {
@@ -3150,7 +3150,7 @@ body.wrap-width {
   .wrap-width .navbar,
   .wrap-width .container,
   .wrap-width #page-wrap {
-    width: 970px !important;
+    width: 100% !important;
   }
 }
 @media (max-width: 991px) {
@@ -3170,12 +3170,12 @@ body.wrap-width {
 .wrap-width .navbar {
   margin: 0 auto;
 }
-.wrap-width .tp-banner-container {
+/*.wrap-width .tp-banner-container {
   left: 50% !important;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-}
+}*/
 .wrap-width .tp-leftarrow.tparrows.default.preview4 {
   left: 0 !important;
 }

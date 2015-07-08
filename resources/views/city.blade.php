@@ -179,74 +179,74 @@
       $("#owl-portfolio0").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio1").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio2").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio3").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio4").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio5").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio6").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio7").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio8").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio9").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio10").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
       $("#owl-portfolio11").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
           items : 1,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+          itemsDesktop : [1199,1],
+          itemsDesktopSmall : [979,1]
       });
     });
     </script>
