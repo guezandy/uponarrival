@@ -41,7 +41,7 @@ class FourSquareController extends Controller {
 
     $gateway = $factory->getVenuesGateway();
 
-    $search = Input::get('city') .' , '. Input::get('state');
+    $search = Input::get('city') .', '. Input::get('state');
 		//Art&Ent, Events, Food, Nightlife, Parks, Scenic views, Outlets
     $venues = $gateway->search(array(
      'near' => $search,
