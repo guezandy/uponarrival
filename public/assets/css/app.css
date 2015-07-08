@@ -1398,10 +1398,6 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: url('assets/img/back.jpeg');
-  background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-size:cover;
 }
 .row {
   margin-left: -15px;

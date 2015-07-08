@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
 
 	<!-- Fonts -->
@@ -21,25 +21,93 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
+
+<style>
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%
+        color: #B0BEC5;
+        display: table;
+        font-weight: 100;
+        font-family: 'Lato';
+        background-image: url('assets/img/back.jpeg');
+        background-position: center;
+        background-size:cover;
+    }
+
+    select {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -webkit-padding-end: 20px;
+      -moz-padding-end: 20px;
+      -webkit-padding-start: 2px;
+      -moz-padding-start: 2px;
+      font-family: 'Lato';
+      background-color: rgba(0, 0, 0, 0.0);
+      background-repeat: no-repeat;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
+      color: #555;
+      font-size: 24px;
+      margin: 0;
+      overflow: hidden;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-overflow: ellipsis;
+      text-align: center;
+      white-space: nowrap;
+      width:100%;
+      border:0;
+      border-bottom: 2px solid;
+      border-color: rgb(0, 0, 0);
+  }
+
+    .input{
+      width: 100%;
+      text-align: center;
+      font-size:24px;
+      font-family: 'Lato';
+      background-color: rgba(0, 0, 0, 0.0);
+      border:0;
+      border-bottom: 2px solid;
+      border-color: rgb(0, 0, 0);
+    }
+
+    .center {
+      vertical-align: middle;
+      display: table-cell;
+      text-align: center;
+
+    }
+
+    .title{
+      font-family: 'Lato';
+      font-size: 4em;
+    }
+
+</style>
 <body>
 
-  <div class="container-fluid">
+  <div class="center">
   	<div class="row">
   		<div class="col-md-8 col-md-offset-2">
   			<div class="panel panel-default">
-  				<div class="panel-heading">Upon Arrival to:</div>
-
   				<div class="panel-body">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <h1>Upon arrival to:<h1>
+              <div class="title">Upon arrival to:<div>
             </div>
             <form class="" method="any" action="{{ url('/search')}}">
   						<div class="form-group">
   							<div class="col-md-6 col-sm-6 col-xs-6">
-                  <input class="form-control" type="text" name="city" id="city" placeholder="City" required>
+                  <input class="input" type="text" name="city" id="city" placeholder="City" required>
   							</div>
                 <div class="col-md-4 col-xs-4 col-sm-4">
-                  <select class="form-control" name="state" id="state" placeholder="State">
+                  <select class="select" name="state" id="state" placeholder="State">
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AZ">AZ</option>
@@ -94,7 +162,7 @@
                   </select>
                 </div>
                 <div class="col-md-2 col-xs-2 col-sm-2">
-                  <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-angle-right"></i></button>
+                  <button type="submit" class="btn btn-sm"><i class="fa fa-angle-right"></i></button>
                 </div>
   						</div>
               <div class="col-md-12" style="text-align:center;">
