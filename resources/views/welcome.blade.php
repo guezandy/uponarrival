@@ -13,25 +13,7 @@
         <link href="assets/css/bootstrap/theme-b.css" rel="stylesheet" id="bootstrapTheme">
         <!--<link href="assets/css/main-theme/themes/red-b.css" rel="stylesheet" id="mainTheme">-->
         <link href="assets/css/main-theme/theme-m.css" rel="stylesheet" id="mainTheme">
-        <style>
-            html, body {
-                height: 100%;
-            }
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-                background-image: url('assets/img/back.jpeg');
-                background-position: center;
-                background-size:cover;
-            }
-            </style>
     </head>
     <body>
         <div class="page-wrap">
