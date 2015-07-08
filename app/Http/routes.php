@@ -19,5 +19,5 @@ Route::get('search', 'FourSquareController@index');
 
 
 Route::get('/test', function() {
-    return view('flip_card');
+    return view('landing');
 });
