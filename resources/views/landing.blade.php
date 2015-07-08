@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
+	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
 
 	<!-- Fonts -->
@@ -98,8 +99,8 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="title">Upon arrival to:<div>
             </div>
-            <form class="" method="any" action="{{ url('/search')}}">
-  						<div class="">
+            <form class="form-horizontal" method="any" action="{{ url('/search')}}">
+  						<div class="form-group">
   							<div class="col-md-6 col-sm-6 col-xs-6">
                   <input class="input" type="text" name="city" id="city" placeholder="City" required>
   							</div>
@@ -159,7 +160,7 @@
                   </select>
                 </div>
                 <div class="col-md-2 col-xs-2 col-sm-2">
-                  <button type="submit" class="btn btn-sm"><i class="fa fa-angle-right"></i></button>
+                  <button type="submit" class="btn btn-sm btn-info"><i class="fa fa-angle-right"></i></button>
                 </div>
   						</div>
               <div class="col-md-12" style="text-align:center;">
