@@ -9,8 +9,10 @@
         <!-- FONTS -->
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
-
-
+        <!-- If you want change theme, you need to remove old one and new one, how for Bootstrap, so for custom theme -->
+        <link href="assets/css/bootstrap/theme-b.css" rel="stylesheet" id="bootstrapTheme">
+        <!--<link href="assets/css/main-theme/themes/red-b.css" rel="stylesheet" id="mainTheme">-->
+        <link href="assets/css/main-theme/theme-m.css" rel="stylesheet" id="mainTheme">
         <style>
             html, body {
                 height: 100%;
@@ -121,7 +123,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="content">
+            <div class="section-lg">
                 <div class="title">Upon arrival to:</div>
                 <form class="" method="any" action="{{ url('/search')}}">
                   <!--MAKE SURE VALID HAS BEEN ENETERED BEFORE CONTINUING-->
