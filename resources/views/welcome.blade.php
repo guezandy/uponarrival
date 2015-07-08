@@ -8,6 +8,7 @@
 
         <!-- FONTS -->
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
 
 
         <style>
@@ -28,6 +29,30 @@
                 background-size:cover;
             }
 
+            select {
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -webkit-padding-end: 20px;
+              -moz-padding-end: 20px;
+              -webkit-padding-start: 2px;
+              -moz-padding-start: 2px;
+              font-family: 'Lato';
+              background-color: rgba(0, 0, 0, 0.0);
+              background-position: center right;
+              background-repeat: no-repeat;
+              border: 0px solid #AAA;
+              border-radius: 2px;
+              box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
+              color: #555;
+              font-size: 24px;
+              margin: 0;
+              overflow: hidden;
+              padding-top: 2px;
+              padding-bottom: 2px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          }
+
             .container {
                 text-align: center;
                 display: table-cell;
@@ -37,16 +62,60 @@
             .content {
                 text-align: center;
                 display: inline-block;
+                background-color: rgba(255, 255, 255, 0.5);
             }
 
             .title {
                 font-size: 96px;
                 margin-bottom: 40px;
+                color: #000;
             }
 
             .quote {
                 font-size: 24px;
             }
+            .input{
+              text-align: center;
+              font-size:24px;
+              width: 200px;
+              font-family: 'Lato';
+              background-color: rgba(0, 0, 0, 0.0);
+              border:0;
+              border-bottom: 2px solid;
+              border-color: rgb(0, 0, 0);
+
+            }
+
+            .btn {
+              display: inline-block;
+              margin-bottom: 0;
+              font-weight: 400;
+              text-align: center;
+              vertical-align: middle;
+              cursor: pointer;
+              background-image: none;
+              background-color: rgba(0, 0, 0, 0.0);
+              border: 1px solid transparent;
+              white-space: nowrap;
+              padding: 10px 15px;
+              font-size: 14px;
+              line-height: 1.42857143;
+              border-radius: 2px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              -webkit-transition: all 0.35s ease;
+                      transition: all 0.35s ease;
+            }
+
+            .btn-sm,
+              .btn-group-sm > .btn {
+                padding: 5px 10px;
+                font-size: 30px;
+                line-height: 1.5;
+                border-radius: 2px;
+              }
         </style>
     </head>
     <body>
@@ -56,64 +125,64 @@
                 <form class="" method="any" action="{{ url('/search')}}">
                   <!--MAKE SURE VALID HAS BEEN ENETERED BEFORE CONTINUING-->
                     <!--<input type="hidden" name="_token" value="{{ csrf_token() }}">-->
-                    <input type="text" name="city" id="city" placholder="City">
+                    <input class="input" type="text" name="city" id="city" placeholder="City" required>
                     <select name="state" id="state" placeholder="State">
-                    	<option value="AL">Alabama</option>
-                    	<option value="AK">Alaska</option>
-                    	<option value="AZ">Arizona</option>
-                    	<option value="AR">Arkansas</option>
-                    	<option value="CA">California</option>
-                    	<option value="CO">Colorado</option>
-                    	<option value="CT">Connecticut</option>
-                    	<option value="DE">Delaware</option>
-                    	<option value="DC">District Of Columbia</option>
-                    	<option value="FL">Florida</option>
-                    	<option value="GA">Georgia</option>
-                    	<option value="HI">Hawaii</option>
-                    	<option value="ID">Idaho</option>
-                    	<option value="IL">Illinois</option>
-                    	<option value="IN">Indiana</option>
-                    	<option value="IA">Iowa</option>
-                    	<option value="KS">Kansas</option>
-                    	<option value="KY">Kentucky</option>
-                    	<option value="LA">Louisiana</option>
-                    	<option value="ME">Maine</option>
-                    	<option value="MD">Maryland</option>
-                    	<option value="MA">Massachusetts</option>
-                    	<option value="MI">Michigan</option>
-                    	<option value="MN">Minnesota</option>
-                    	<option value="MS">Mississippi</option>
-                    	<option value="MO">Missouri</option>
-                    	<option value="MT">Montana</option>
-                    	<option value="NE">Nebraska</option>
-                    	<option value="NV">Nevada</option>
-                    	<option value="NH">New Hampshire</option>
-                    	<option value="NJ">New Jersey</option>
-                    	<option value="NM">New Mexico</option>
-                    	<option value="NY">New York</option>
-                    	<option value="NC">North Carolina</option>
-                    	<option value="ND">North Dakota</option>
-                    	<option value="OH">Ohio</option>
-                    	<option value="OK">Oklahoma</option>
-                    	<option value="OR">Oregon</option>
-                    	<option value="PA">Pennsylvania</option>
-                    	<option value="RI">Rhode Island</option>
-                    	<option value="SC">South Carolina</option>
-                    	<option value="SD">South Dakota</option>
-                    	<option value="TN">Tennessee</option>
-                    	<option value="TX">Texas</option>
-                    	<option value="UT">Utah</option>
-                    	<option value="VT">Vermont</option>
-                    	<option value="VA">Virginia</option>
-                    	<option value="WA">Washington</option>
-                    	<option value="WV">West Virginia</option>
-                    	<option value="WI">Wisconsin</option>
-                    	<option value="WY">Wyoming</option>
+                      	<option value="AL">AL</option>
+                      	<option value="AK">AK</option>
+                      	<option value="AZ">AZ</option>
+                      	<option value="AR">AR</option>
+                      	<option value="CA">CA</option>
+                      	<option value="CO">CO</option>
+                      	<option value="CT">CT</option>
+                      	<option value="DE">DE</option>
+                      	<option value="DC">DC</option>
+                      	<option value="FL">FL</option>
+                      	<option value="GA">GA</option>
+                      	<option value="HI">HI</option>
+                      	<option value="ID">ID</option>
+                      	<option value="IL">IL</option>
+                      	<option value="IN">IN</option>
+                      	<option value="IA">IA</option>
+                      	<option value="KS">KS</option>
+                      	<option value="KY">KY</option>
+                      	<option value="LA">LA</option>
+                      	<option value="ME">ME</option>
+                      	<option value="MD">MD</option>
+                      	<option value="MA">MA</option>
+                      	<option value="MI">MI</option>
+                      	<option value="MN">MN</option>
+                      	<option value="MS">MS</option>
+                      	<option value="MO">MO</option>
+                      	<option value="MT">MT</option>
+                      	<option value="NE">NE</option>
+                      	<option value="NV">NV</option>
+                      	<option value="NH">NH</option>
+                      	<option value="NJ">NJ</option>
+                      	<option value="NM">NM</option>
+                      	<option value="NY">NY</option>
+                      	<option value="NC">NC</option>
+                      	<option value="ND">ND</option>
+                      	<option value="OH">OH</option>
+                      	<option value="OK">OK</option>
+                      	<option value="OR">OR</option>
+                      	<option value="PA">PA</option>
+                      	<option value="RI">RI</option>
+                      	<option value="SC">SC</option>
+                      	<option value="SD">SD</option>
+                      	<option value="TN">TN</option>
+                      	<option value="TX">TX</option>
+                      	<option value="UT">UT</option>
+                      	<option value="VT">VT</option>
+                      	<option value="VA">VA</option>
+                      	<option value="WA">WA</option>
+                      	<option value="WV">WV</option>
+                      	<option value="WI">WI</option>
+                      	<option value="WY">WY</option>
                     </select>
                     <!--<input type="text" name="state" id="state">-->
-                    <button type="submit" class="btn btn-success btn-sm">Update</button>
+                    <button type="submit" class="btn btn-success btn-sm"><!--<i class="fa fa-angle-right">--></i></button>
                 </form>
-                <img src="assets/img/poweredby.png">
+                <img src="assets/img/poweredby.png" style="max-width:200px">
             </div>
         </div>
     </body>

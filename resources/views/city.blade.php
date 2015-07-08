@@ -50,19 +50,27 @@
      ===============================-->
     <div id="page-wrap">
     <!-- Expertise SECTION -->
+    <div class="md-overlay">
+      <h2 class="lg-title-overlay">Div overlay</h2>
+    </div>
         <span class="breakPoint" id="s4"></span>
         <div class="section-xlg">
             <div class="container">
-                <h2 class="lg-title">{{$search}}</h2>
-
+                <!--<h2 class="lg-title">{{$search}}</h2>
                 <!-- Tab panes -->
+                <div style="position:relative">
+                  <div class="lg-title-overlay">
+                    {{$search}}
+                  </div>
+                <div>
                 <div class="tab-content">
                     <!-- First type of the pricing charts -->
                     <div class="tab-pane active" id="pricesv1">
                         <div class="row">
                           @for ($i = 0; $i < 12; $i++)
                             <div class="col-md-3">
-                                <div class="panel panel-default prices-v3">
+                                <div class="">
+                                <!--<div class="panel panel-default prices-v3">-->
                                     <div class="panel-body text-center">
                                         <div class="hover-content">
                                             <div class="visible-part">
@@ -90,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="space-xlg"></div>
+                <!--<div class="space-xlg"></div>-->
             </div>
         </div>
         <!-- /Expertise SECTION -->
@@ -103,7 +111,7 @@
         <!-- FOOTER -->
         <div class="footer">
             <div class="container">
-                <div class="space-md"></div>
+                <!--<div class="space-md"></div>-->
                 <div>
                     &copy; 2015 Luna Developer. All rights reserved.
                 </div>
