@@ -181,7 +181,7 @@
                       	<option value="WY">WY</option>
                     </select>
                     <!--<input type="text" name="state" id="state">-->
-                    <button type="submit" class="btn btn-success btn-sm"><!--<i class="fa fa-angle-right">--></i></button>
+                    <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-angle-right"></i></button>
                 </form>
                 <img src="assets/img/poweredby.png" style="max-width:200px">
             </div>
