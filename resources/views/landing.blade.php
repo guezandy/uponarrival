@@ -104,10 +104,10 @@
             <form class="" method="any" action="{{ url('/search')}}">
   						<div class="form-group">
   							<div class="col-md-6 col-sm-6 col-xs-6">
-                  <input class="form-select input" type="text" name="city" id="city" placeholder="City" required>
+                  <input class="form-control input" type="text" name="city" id="city" placeholder="City" required>
   							</div>
                 <div class="col-md-4 col-xs-4 col-sm-4">
-                  <select class="form-select select" name="state" id="state" placeholder="State">
+                  <select class="form-control select" name="state" id="state" placeholder="State">
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AZ">AZ</option>
