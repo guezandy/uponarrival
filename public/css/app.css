@@ -6,6 +6,8 @@ html {
 }
 body {
   margin: 0;
+  vertical-align: middle;
+
 }
 article,
 aside,
@@ -5202,13 +5204,11 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid #dddddd;
 }
 .panel-default {
+  margin-top: 10px;
   border-color: #dddddd;
 }
 .panel-default > .panel-heading {
-  font-size: 96px;
-  margin-bottom: 40px;
   color: #000;
-  text-align: center;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
