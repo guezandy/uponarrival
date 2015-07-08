@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
 
 	<!-- Fonts -->
@@ -30,8 +29,6 @@
     body {
         margin: 0;
         padding: 0;
-        width: 100%;
-        height: 100%
         color: #B0BEC5;
         display: table;
         font-weight: 100;
