@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+	<title>Upon Arrival to:</title>
 
 	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/plugins/font-awesome.css">
@@ -165,6 +165,9 @@
   						</div>
               <div class="col-md-12" style="text-align:center;">
                 <img src="assets/img/poweredby.png" style="max-width:200px">
+              </div>
+              <div class="col-md-12" style="text-align:center;">
+
               </div>
   					</form>
   				</div>

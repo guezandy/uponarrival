@@ -16,8 +16,3 @@ Route::get('/', function () {
 });
 
 Route::get('search', 'FourSquareController@index');
-
-
-Route::get('/test', function() {
-    return view('landing');
-});
