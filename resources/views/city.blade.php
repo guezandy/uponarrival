@@ -78,11 +78,15 @@
                                               </div>
                                             </div>
                                             <div class="hidden-part">
-                                                <h4 class="type">{{$names[$i]}}</h4>
-                                                <h4 padding-top: "25px" padding-right: "50px" padding-bottom: "25px" padding-left: "50px"></h4>
-                                                <a href="#">
-                                                    <h5 class="text-primary details">Additional info</h5>
+                                                <h4 class="type">{{$category[$i]}}</h4>
+                                                <h4 padding-top: "25px" padding-right: "50px" padding-bottom: "25px" padding-left: "50px">{{$names[$i]}}</h4>
+                                                <h5>{{$address[$i]}}</h5>
+                                                <h5>{{$phone[$i]}}</h5>
+                                                @if($url[$i] != "n/a")
+                                                <a href="{!! $url[$i] !!}">
+                                                    <h5 class="text-primary details">Check out website!</h5>
                                                 </a>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
