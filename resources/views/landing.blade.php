@@ -12,7 +12,8 @@
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,10 +31,10 @@
     body {
         margin: 0;
         padding: 0;
-        color: #B0BEC5;
+        color: #fff;
         display: table;
         font-weight: 100;
-        font-family: 'Lato';
+        font-family: 'Open Sans';
         background-image: url('assets/img/back.jpeg');
         background-position: center;
         background-size:cover;
@@ -46,12 +47,12 @@
       -moz-padding-end: 20px;
       -webkit-padding-start: 2px;
       -moz-padding-start: 2px;
-      font-family: 'Lato';
+			font-family: 'Open Sans';
       background-color: rgba(0, 0, 0, 0.0);
       background-repeat: no-repeat;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
-      color: #555;
-      font-size: 24px;
+      color: rgb(255,255,255);
+      font-size: 30px;
       margin: 0;
       overflow: hidden;
       padding-top: 2px;
@@ -62,18 +63,19 @@
       width:100%;
       border:0;
       border-bottom: 2px solid;
-      border-color: rgb(0, 0, 0);
+      border-color: rgb(255, 255, 255);
   }
 
     .input{
       width: 100%;
       text-align: center;
-      font-size:24px;
-      font-family: 'Lato';
+      font-size:30px;
+      font-family: 'Open Sans';
       background-color: rgba(0, 0, 0, 0.0);
       border:0;
+			color: rgb(255,255,255);
       border-bottom: 2px solid;
-      border-color: rgb(0, 0, 0);
+      border-color: rgb(255, 255, 255);
     }
 
     .center {
@@ -84,28 +86,68 @@
     }
 
     .title{
-      font-family: 'Lato';
-      font-size: 4em;
+      font-family: 'Pacifico';
+      font-size: 6em;
+			color: rgb(255,255,255);
     }
+
+		.blur {
+			background-color: rgba(0,0,0,0.1);
+		}
+
+		.logo {
+		  align: center;
+			width: 100%;
+			margin: 0 auto;
+		  position:fixed;
+		  z-index: 5000;
+		  bottom: 10%;
+		}
+
+		.button {
+			width: 100%;
+      text-align: center;
+      font-size:24px;
+      font-family: 'Open Sans';
+			text-transform: lowercase;
+			font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.0);
+			color: rgb(255,255,255);
+      border: 2px solid;
+      border-color: rgb(255, 255, 255);
+    }
+		input[placeholder], [placeholder], *[placeholder] {
+    color: white !important;
+}
 
 </style>
 <body>
-
   <div class="center">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="logo">
+					<img src="assets/img/poweredby.png" style="max-width:200px">
+				</div>
+			</div>
+		</div>
   	<div class="row">
   		<div class="col-md-8 col-md-offset-2">
-  			<div class="panel panel-default">
+  			<div class="blur">
   				<div class="panel-body">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="title">Upon arrival to:<div>
             </div>
             <form class="form-horizontal" method="any" action="{{ url('/search')}}">
   						<div class="form-group">
-  							<div class="col-md-6 col-sm-6 col-xs-6">
-                  <input class="input" type="text" name="city" id="city" placeholder="City" required>
+  							<div class="col-md-5 col-sm-5 col-xs-5 col-md-offset-1">
+                  <input class="input" type="text" name="city" id="city" placeholder="this awesome city" required>
   							</div>
-                <div class="col-md-4 col-xs-4 col-sm-4">
-                  <select class="select" name="state" id="state" placeholder="State">
+								<div class="col-md-1 col-xs-1 col-sm-1">
+									<sub>,</sub>
+								</div>
+                <div class="col-md-3 col-xs-3 col-sm-3">
+                  <select class="select" name="state" id="state" required>
+											<option value="">in state</option>
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AZ">AZ</option>
@@ -159,22 +201,18 @@
                       <option value="WY">WY</option>
                   </select>
                 </div>
-                <div class="col-md-2 col-xs-2 col-sm-2">
-                  <button type="submit" class="btn btn-sm btn-info"><i class="fa fa-angle-right"></i></button>
+								<div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4" style="text-align:center;">
+                  <button type="submit" class="button">You must...</i></button>
                 </div>
   						</div>
-              <div class="col-md-12" style="text-align:center;">
-                <img src="assets/img/poweredby.png" style="max-width:200px">
-              </div>
-              <div class="col-md-12" style="text-align:center;">
-
-              </div>
   					</form>
   				</div>
   			</div>
   		</div>
   	</div>
   </div>
+</div>
+</div>
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

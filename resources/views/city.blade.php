@@ -50,7 +50,6 @@
      ===============================-->
     <div id="page-wrap">
     <!-- Expertise SECTION -->
-
         <span class="breakPoint" id="s4"></span>
         <div class="section-xlg">
             <div class="container">
