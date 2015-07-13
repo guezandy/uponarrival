@@ -87,7 +87,7 @@
 
     .title{
       font-family: 'Pacifico';
-			color: rgb(255,255,255);
+			color: rgb(0,0,0);
 			text-align: center;
 			position: relative;
 			letter-spacing: 1px;
