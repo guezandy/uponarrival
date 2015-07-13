@@ -87,8 +87,14 @@
 
     .title{
       font-family: 'Pacifico';
-      font-size: 6em;
 			color: rgb(255,255,255);
+			text-align: center;
+			position: relative;
+			letter-spacing: 1px;
+			margin-bottom: 45px;
+			color: #757575;
+			font-size: 45px;
+			margin-top: 0;
     }
 
 		.blur {
@@ -101,7 +107,7 @@
 			margin: 0 auto;
 		  position:fixed;
 		  z-index: 5000;
-		  bottom: 10%;
+		  bottom: 5%;
 		}
 
 		.button {
@@ -139,13 +145,14 @@
             </div>
             <form class="form-horizontal" method="any" action="{{ url('/search')}}">
   						<div class="form-group">
-  							<div class="col-md-5 col-sm-5 col-xs-5 col-md-offset-1">
+								<div class="row">
+  							<div class="col-md-5 col-sm-5 col-xs-6 col-md-offset-1">
                   <input class="input" type="text" name="city" id="city" placeholder="this awesome city" required>
   							</div>
-								<div class="col-md-1 col-xs-1 col-sm-1">
+								<div class="col-md-2 col-xs-2 col-sm-2">
 									<sub>,</sub>
 								</div>
-                <div class="col-md-3 col-xs-3 col-sm-3">
+                <div class="col-md-3 col-xs-4 col-sm-3">
                   <select class="select" name="state" id="state" required>
 											<option value="">in state</option>
                       <option value="AL">AL</option>
@@ -201,7 +208,8 @@
                       <option value="WY">WY</option>
                   </select>
                 </div>
-								<div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-4" style="text-align:center;">
+							</div>
+								<div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-4 col-sm-offset-4" style="text-align:center;">
                   <button type="submit" class="button">You must...</i></button>
                 </div>
   						</div>
